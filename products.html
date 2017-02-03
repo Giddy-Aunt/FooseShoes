@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Fooseshoes</title>
+    <title>Магазин обуви Fooseshoes</title>
   </head>
   <body>
     <header class="page-header">
-
       <div class="page-header__top">
         <div class="page-header__inner">
           <div class="page-header__left">
@@ -25,7 +24,6 @@
           </div>
         </div>
       </div>
-
       <div class="page-header__main">
         <div class="page-header__inner">
           <nav class="main-nav">
@@ -48,63 +46,70 @@
           </div>
         </div>
       </div>
-
-
-      <div class="promo  promo--main-page  slider">
-        <ul class="promo__inner  slides">
-          <li class="slide">
+      <div class="promo  promo--product-page">
+        <div class="promo__inner ">
             <div class="promo__caption">
               <div class="price"></div>
               <h2 class="promo__title">Pink shoes 2013 collection</h2>
               <p class="promo__p">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget.</p>
               <ul class="commerce-btns">
-                <li><a href="#" class="btn  btn--commerce  btn--full">Full view</a></li>
-                <li><a href="#" class="btn  btn--commerce  btn--fav">Add to favorites</a></li>
-                <li><a href="#" class="btn  btn--commerce  btn--share">Share</a></li>
-                <li><a href="#" class="btn  btn--commerce  btn--cart">Buy</a></li>
+                <li><a href="#" class="btn  btn--commerce  btn--full"></a></li>
+                <li><a href="#" class="btn  btn--commerce  btn--fav"></a></li>
+                <li><a href="#" class="btn  btn--commerce  btn--share"></a></li>
+                <li><a href="#" class="btn  btn--commerce  btn--cart"></a></li>
               </ul>
             </div>
-          </li>
-        </ul>
-        <div class="slider__controls">
-          <ul class="slider__controls-list">
-            <li class="slider__controls-item  slider__controls-item--active">
-              <span class="slider__slide-title">Pink Shoes</span>
-              <span class="slider__slide-subtitle">Now af $145,99</span>
-            </li>
-            <li class="slider__controls-item">
-              <span class="slider__slide-title">Anna Field</span>
-              <span class="slider__slide-subtitle">Limited Edition</span>
-            </li>
-            <li class="slider__controls-item">
-              <span class="slider__slide-title">Prada</span>
-              <span class="slider__slide-subtitle">Summer is coming</span>
-            </li>
-            <li class="slider__controls-item">
-              <span class="slider__slide-title">Casadei</span>
-              <span class="slider__slide-subtitle">All colors available</span>
-            </li>
-            <li class="slider__controls-item">
-              <span class="slider__slide-title">Mellow Yellow</span>
-              <span class="slider__slide-subtitle">Free delivery</span>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
     <main class="page-content">
-      <section class="banners">
-        <div class="banners__inner">
-          <article class="banner"><a href="#" class="banner__link">On sale</a></article>
-          <article class="banner"><a href="#" class="banner__link">Special offers</a></article>
-          <article class="banner"><a href="#" class="banner__link">Must have</a></article>
+
+      <div class="catalog-filters">
+        <div class="catalog-filters__inner">
+          <div class="catalog-filters__title">Shop by</div>
+          <ul class="catalog-filters__list">
+            <li class="catalog-filters__filter">
+              <a href="#">Brands</a>
+              <ul class="catalog-filters__dropdown">
+                <li class="catalog-filters__options"><a href="#">Buffalo Decolletè</a></li>
+                <li class="catalog-filters__options"><a href="#">even & odd</a></li>
+                <li class="catalog-filters__options"><a href="#">Prada</a></li>
+                <li class="catalog-filters__options"><a href="#">Casadei</a></li>
+                <li class="catalog-filters__options"><a href="#">Mellow Yellow</a></li>
+              </ul>
+            </li>
+            <li class="catalog-filters__filter"><a href="#">Categories</a></li>
+            <li class="catalog-filters__filter"><a href="#">Price</a></li>
+          </ul>
+
         </div>
-      </section>
+      </div>
+
       <div class="page-content__inner">
         <section class="products">
           <header class="products__header">
-            <h2 class="products__section-title">New arrivals on FooseShoes</h2>
-            <a href="" class="btn   btn--catalog  btn--show-all">Show all</a>
+            <div>
+              <h2 class="products__section-title">All products</h2>
+              <ul class="products__breadcrumbs">
+                <li class="products__breadcrumbs-item"><a href="#">Home</a></li>
+                <li class="products__breadcrumbs-item"><a href="#">All products</a></li>
+              </ul>
+            </div>
+            <div class="products__filters">
+              <div class="products__view-as">
+                <span>View as</span>
+                <button class="btn  btn--catalog  btn--view-as    btn--view-as-table" type="button"></button>
+                <button class="btn  btn--catalog  btn--view-as    btn--view-as-list" type="button"></button>
+              </div>
+              <div class="products__sorting">
+                <select>
+                  <option selected>Sort alphabetically</option>
+                  <option>Sort by price</option>
+                </select>
+                <button class="btn  btn--catalog  btn--sort-direction" type="button"></button>
+              </div>
+            </div>
+
           </header>
           <div class="products__inner">
             <article class="product-card">
@@ -152,14 +157,6 @@
                 </ul>
               </div>
             </article>
-          </div>
-        </section>
-        <section class="products">
-          <header class="products__header">
-            <h2 class="products__section-title">Best sellers of the month</h2>
-            <a href="" class="btn  btn--catalog  btn--show-all">Show all</a>
-          </header>
-          <div class="products__inner">
             <article class="product-card">
               <div class="product-card__img">
                 <img src="img/thumb-4.jpg" alt="">
@@ -205,8 +202,54 @@
                 </ul>
               </div>
             </article>
+            <article class="product-card">
+              <div class="product-card__img">
+                <img src="img/thumb-1.jpg" alt="">
+              </div>
+              <div class="product-card__caption">
+                <div class="price">$145.99</div>
+                <h3 class="product-card__title">even & odd</h3>
+                <ul class="commerce-btns commerce-btns--product-card">
+                  <li><a href="#" class="btn  btn--commerce  btn--full">Full view</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--fav">Add to favorites</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--share">Share</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--cart">Buy</a></li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__img">
+                <img src="img/thumb-2.jpg" alt="">
+              </div>
+              <div class="product-card__caption">
+                <div class="price">$145.99</div>
+                <h3 class="product-card__title">even & odd</h3>
+                <ul class="commerce-btns commerce-btns--product-card">
+                  <li><a href="#" class="btn  btn--commerce  btn--full">Full view</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--fav">Add to favorites</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--share">Share</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--cart">Buy</a></li>
+                </ul>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-card__img">
+                <img src="img/thumb-3.jpg" alt="">
+              </div>
+              <div class="product-card__caption">
+                <div class="price">$145.99</div>
+                <h3 class="product-card__title">Buffalo Decolletè</h3>
+                <ul class="commerce-btns commerce-btns--product-card">
+                  <li><a href="#" class="btn  btn--commerce  btn--full">Full view</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--fav">Add to favorites</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--share">Share</a></li>
+                  <li><a href="#" class="btn  btn--commerce  btn--cart">Buy</a></li>
+                </ul>
+              </div>
+            </article>
           </div>
         </section>
+
 
         <section class="widgets">
           <div class="column-half-width">
@@ -247,6 +290,7 @@
           </div>
 
         </section>
+
       </div>
     </main>
 
