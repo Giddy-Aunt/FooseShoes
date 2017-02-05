@@ -1,0 +1,43 @@
+.search-form {
+  display: flex;
+  padding: 5px 20px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.search-form__submit {
+  @include size(36px);
+  font-size: 0;
+  //background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.subscribe-form__submit {
+  @include size(36px);
+  font-size: 0;
+  //background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.text-field {
+  display: block;
+  padding: 9px 14px;
+  width: 215px;
+
+  font-style: italic;
+  outline: none;
+  border: none;
+
+  &--search {
+    background-color: transparent;
+  }
+
+    &--subscribe {
+    background-color: black;
+  }
+
+}

@@ -1,0 +1,10 @@
+.price {
+    @include size(66px);
+    display: inline-block;
+
+    text-align: center;
+    line-height: 66px;
+    color: white;
+    font-weight: 900;
+    background-color:$main-color;
+}

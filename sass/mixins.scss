@@ -1,0 +1,79 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin btn-style {
+  color: $white;
+
+  background-color: $blue;
+
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: $darker-blue;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+
+    background-color: $brighter-blue;
+  }
+}
+
+@mixin input-style {
+  border: none;
+  outline: none;
+  background-color: $lighter-grey;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: $grey;
+  }
+
+  &:focus {
+    background-color: $white;
+    box-shadow: 0 0 0 4px $grey inset;
+  }
+}
+
+
+
+@mixin absolute-pseudo-element($top: auto,  $left: auto, $bottom: auto, $right: auto) {
+  content: "";
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin container {
+  min-width: $mobile-width;
+  width: auto;
+  padding: 0 10px;
+
+  @media #{$desktop-widths} {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  }
+}
+
+@mixin column($number) {
+  @media #{$tablet-widths} {
+    float: left;
+    width: $tablet-width / $number;
+  }
+
+  @media #{$desktop-widths} {
+    width: $desktop-width / $number;
+  }
+}
+

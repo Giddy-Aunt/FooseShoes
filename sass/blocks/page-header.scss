@@ -1,0 +1,64 @@
+.page-header__top {
+  color: $font-secondary-color;
+  background-color: $bg-secondary-color;
+}
+
+.page-header__main {
+  background-color: $header-main-color;
+}
+
+.page-header__inner {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-block {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 5px;
+  }
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    padding: 20px 23px;
+    border-left: 1px solid #cccccc;
+    color: white;
+    text-decoration: none;
+
+    &:last-child {
+      border-right: 1px solid #cccccc;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size(20px);
+    border-radius: 3px;
+
+    &--cart {
+      background-color: $main-color;
+    }
+
+    &--fav {
+      background-color: #adadad;
+    }
+  }
+}

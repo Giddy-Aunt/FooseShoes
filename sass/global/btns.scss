@@ -1,0 +1,75 @@
+.btn {
+  display: inline-block;
+
+  vertical-align: top;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--commerce {
+    @include size(40px);
+    font-size: 0;
+    background-color: white;
+  }
+
+  &--social {
+    @include size(40px);
+    font-size: 0;
+    background-color: #2e2e2e;
+  }
+
+  &--catalog {
+
+    font-size: 14px;
+    line-height: 2;
+    color: $catalog-btns-color;
+    background-color: transparent;
+    border: 1px solid $catalog-btns-color;
+
+    &.active,
+    &:hover {
+      border-color: $catalog-btns-color-active;
+    }
+  }
+
+  &--show-all {
+    padding: 0 25px;
+  }
+
+  &--view-as {
+    @include size(30px);
+    margin-left: 10px;
+  }
+}
+
+
+.commerce-btns {
+  @include list-reset;
+  font-size: 0;
+
+  & li {
+    display: inline-block;
+    margin-right: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.social-btns {
+  @include list-reset;
+  font-size: 0;
+
+  & li {
+    display: inline-block;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

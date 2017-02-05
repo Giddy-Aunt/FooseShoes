@@ -2,19 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Магазин обуви Fooseshoes</title>
+    <link  rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__top">
         <div class="page-header__inner">
-          <div class="page-header__left">
-            <a href="" class="logo"><h1>FooseShoes</h1></a>
+          <div class="left">
+            <a href="index.html" class="logo"><h1>FooseShoes</h1></a>
           </div>
-          <div class="page-header__right">
+          <div class="right">
             <form action="#" class="search-form" method="get">
                 <input class="text-field text-field--subscribe" type="search" id="search-field" name="search" required>
-                <button class="btn btn--submit btn--search" type="submit">Найти</button>
+                <button class="search-form__submit" type="submit">Найти</button>
             </form>
             <div class="login-block">
               <a href="#" class="login-block__link login-block__link--login">Login</a>
@@ -27,8 +29,8 @@
       <div class="page-header__main">
         <div class="page-header__inner">
           <nav class="main-nav">
-            <ul class="man-nav__list">
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html" class="main-nav__link">Home</a></li>
               <li class="main-nav__item"><a href="#" class="main-nav__link">Product</a></li>
               <li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
               <li class="main-nav__item"><a href="#" class="main-nav__link">Pages</a></li>
@@ -48,17 +50,20 @@
       </div>
       <div class="promo  promo--product-page">
         <div class="promo__inner ">
-            <div class="promo__caption">
-              <div class="price"></div>
-              <h2 class="promo__title">Pink shoes 2013 collection</h2>
-              <p class="promo__p">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget.</p>
-              <ul class="commerce-btns">
-                <li><a href="#" class="btn  btn--commerce  btn--full"></a></li>
-                <li><a href="#" class="btn  btn--commerce  btn--fav"></a></li>
-                <li><a href="#" class="btn  btn--commerce  btn--share"></a></li>
-                <li><a href="#" class="btn  btn--commerce  btn--cart"></a></li>
-              </ul>
-            </div>
+          <div class="promo__img-wrapper">
+            <img src="img\slide-1.jpg" alt="Pink Shoes" class="promo__img">
+          </div>
+          <div class="promo__caption">
+            <div class="price">$145.99</div>
+            <h2 class="promo__title">Pink shoes 2013 collection</h2>
+            <p class="promo__p">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget.</p>
+            <ul class="commerce-btns">
+              <li><a href="#" class="btn  btn--commerce  btn--full"></a></li>
+              <li><a href="#" class="btn  btn--commerce  btn--fav"></a></li>
+              <li><a href="#" class="btn  btn--commerce  btn--share"></a></li>
+              <li><a href="#" class="btn  btn--commerce  btn--cart"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -88,25 +93,24 @@
       <div class="page-content__inner">
         <section class="products">
           <header class="products__header">
-            <div>
+            <div class="left">
               <h2 class="products__section-title">All products</h2>
               <ul class="products__breadcrumbs">
                 <li class="products__breadcrumbs-item"><a href="#">Home</a></li>
                 <li class="products__breadcrumbs-item"><a href="#">All products</a></li>
               </ul>
             </div>
-            <div class="products__filters">
+            <div class="right products__filters">
               <div class="products__view-as">
                 <span>View as</span>
-                <button class="btn  btn--catalog  btn--view-as    btn--view-as-table" type="button"></button>
-                <button class="btn  btn--catalog  btn--view-as    btn--view-as-list" type="button"></button>
+                <button class="btn  btn--catalog  btn--view-as  btn--view-as-table  active" type="button"></button>
+                <button class="btn  btn--catalog  btn--view-as  btn--view-as-list" type="button"></button>
               </div>
               <div class="products__sorting">
                 <select>
                   <option selected>Sort alphabetically</option>
                   <option>Sort by price</option>
                 </select>
-                <button class="btn  btn--catalog  btn--sort-direction" type="button"></button>
               </div>
             </div>
 
@@ -127,7 +131,7 @@
                 </ul>
               </div>
             </article>
-            <article class="product-card  product-card--best">
+            <article class="product-card  product-card--sale">
               <div class="product-card__img">
                 <img src="img/thumb-2.jpg" alt="">
               </div>
@@ -252,34 +256,43 @@
 
 
         <section class="widgets">
-          <div class="column-half-width">
+          <div class="widgets__column widgets__column--1of2">
+            <div class="widgets__column widgets__column--1of4">
             <section class="widget  widget--text  widget--home-page">
               <h2 class="widget__title">Free Shippings</h2>
                 <p class="widget__p">Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem,</p>
             </section>
+            </div>
+            <div class="widgets__column widgets__column--1of4">
             <section class="widget  widget--text  widget--home-page">
               <h2 class="widget__title">Testimonials</h2>
               <div class="widget__testimonial">
-                <p class="widget__p">vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit </p>
-                <a href="#" class="widget__overflow-link">[...]</a>
+                <p class="widget__p">vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit <a href="#" class="widget__overflow-link">[...]</a></p>
                 <span class="widget__testimonial-autor">- John Doe -</span>
               </div>
             </section>
           </div>
+          </div>
 
-          <div class="column-half-width">
+          <div class="widgets__column widgets__column--1of2">
             <section class="widget  widget--recent-posts  widget--home-page">
               <h2 class="widget__title">Blog news</h2>
-              <ul class="widget__list">
+              <ul class="widget__recent-posts-list">
                 <li class="widget__post-excerpt">
-                  <span class="widget__post-date">apr 01</span>
+                  <div class="widget__post-date">
+                    <span class="widget__post-month">apr</span>
+                    <span class="widget__post-day">01</span>
+                  </div>
                   <div class="widget__post-text">
                     <a href="#"><h3 class="widget__post-title">Nice & clean. The best for your blog!</h3></a>
                     <p class="widget__p">Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class</p>
                   </div>
                 </li>
                 <li class="widget__post-excerpt">
-                  <span class="widget__post-date">apr 01</span>
+                  <div class="widget__post-date">
+                    <span class="widget__post-month">apr</span>
+                    <span class="widget__post-day">01</span>
+                  </div>
                   <div class="widget__post-text">
                     <a href=""><h3 class="widget__post-title">What an Ecommerce theme!</h3></a>
                     <p class="widget__p">Vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
@@ -290,18 +303,17 @@
           </div>
 
         </section>
-
       </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__top">
-        <div class="page-footer__inner">
-          <section class="widget  widget--text  widget__footer">
+        <div class="page-footer__inner  page-footer__inner--top">
+          <section class="widget  widget--text  widget--footer">
             <h2 class="widget__title">Text widget</h2>
             <p class="widget__p">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           </section>
-          <section class="widget  widget--twitter  widget__footer">
+          <section class="widget  widget--twitter  widget--footer">
             <h2 class="widget__title">Twitter widget</h2>
               <div class="twitter-post">
                 <p class="twitter-post__text"><a class="twitter-post__link" href="#">@johndoe</a> Why thank you. Your work looks awesome by the way! <a class="twitter-post__link" href="#">@richarddavis</a></p>
@@ -312,7 +324,7 @@
             <p class="twitter-post__date">21 days ago</p>
             </div>
           </section>
-          <section class="widget  widget--flickr  widget__footer">
+          <section class="widget  widget--flickr  widget--footer">
             <h2 class="widget__title">Flickr widget</h2>
             <ul class="picture-feed">
               <li class="picture-feed__item"><a href="#"><img src="img/thumb-flickr-1.jpg" alt=""></a></li>
@@ -325,14 +337,18 @@
           </section>
         </div>
       </div>
-      <div  class="page-footer__middle">
-        <div class="page-footer__inner">
 
+      <div  class="page-footer__middle">
+        <div class="page-footer__inner page-footer__inner--middle">
+
+          <div class="left">
             <form action="#" class="subscribe-form" method="get">
                 <input class="text-field text-field--subscribe" type="text" id="subscribe-field" name="subscribe-field" placeholder="Enter email for newsletter" required>
-                <button class="btn  btn--submit  btn--subscribe" type="submit">Subscribe</button>
+                <button class="subscribe-form__submit" type="submit">Subscribe</button>
             </form>
+          </div>
 
+          <div class="right">
             <ul class="social-btns">
               <li><a href="#" class="btn  btn--social  btn--facebook" title="Facebook">Facebook</a></li>
               <li><a href="#" class="btn  btn--social  btn--twitter" title="Twitter">Twitter</a></li>
@@ -340,22 +356,22 @@
               <li><a href="#" class="btn  btn--social  btn--linkedin" title="Linkedin">Linkedin</a></li>
               <li><a href="#" class="btn  btn--social"></a></li>
             </ul>
-
           </div>
         </div>
+      </div>
 
         <div class="page-footer__bottom">
-          <div class="page-footer__bottom-inner">
+          <div class="page-footer__inner page-footer__inner--bottom">
             <div class="page-footer__copyright">
               <p>Copyright © Fooseshoes 2013</p>
               <p>Designed by EnzoLiVolti</p>
             </div>
             <div class="page-footer__links">
               <ul>
-                <li><a href="#">Home /</a></li>
-                <li><a href="#">Support /</a></li>
-                <li><a href="#">Terms and conditions /</a></li>
-                <li><a href="#">Faqs /</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Faqs</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
             </div>
