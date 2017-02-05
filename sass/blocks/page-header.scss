@@ -3,15 +3,16 @@
   background-color: $bg-secondary-color;
 }
 
+  .page-header__inner {
+    @include container;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 .page-header__main {
   background-color: $header-main-color;
-}
-
-.page-header__inner {
-  @include container;
-
-  display: flex;
-  justify-content: space-between;
 }
 
 .login-block {
@@ -62,3 +63,13 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .page-header__inner {
+    @include container;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
