@@ -1,4 +1,5 @@
 .catalog-filters {
+  padding: 15px 0;
   color: white;
   background-color: #2e2e2e;
 
@@ -27,10 +28,11 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  background-color: $bg-secondary-color;
 }
 
 .catalog-filters__filter {
-  padding: 25px 0;
+  padding: 5px 0;
   position: relative;
 
   &:hover .catalog-filters__dropdown {
@@ -46,13 +48,17 @@
 
   text-align: center;
 
-  &::after {
+  &::before {
     @include absolute-pseudo-element(50%, auto, auto, 0);
     @include size(14px);
     margin-top: -7px;
 
     background-color: white;
     border-radius: 50%;
+  }
+
+  &::after {
+    @include arrow-icon(22px, 4px, 6px, -135deg);
   }
 }
 
@@ -61,7 +67,7 @@
   @include list-reset;
   font-size: 1.33rem;
   position: absolute;
-  top: 100px;
+  top: 75px;
   width: 220px;
   padding: 25px 0;
   z-index: 1000;
@@ -93,11 +99,12 @@
 @media #{$tablet-widths} {
 
   .catalog-filters__title {
-    width: 25%;
+    width: 27%;
   }
 
   .catalog-filters__list {
-    width: 75%;
+    width: 73%;
+    justify-content: flex-end;
   }
 
   .catalog-filters__inner {
@@ -107,14 +114,18 @@
   }
 
   .catalog-filters__filter {
-    padding: 25px 0;
+    margin-right: 5%;
   }
 
   .catalog-filters__filter > a {
     padding-right: 60px;
 
-    &::after {
+    &::before {
       right: 10px;
+    }
+
+    &::after {
+      right: 14px;
     }
   }
 }
@@ -128,16 +139,16 @@
     align-items: center;
   }
 
-  .catalog-filters__filter {
-    padding: 25px 0;
-  }
-
   .catalog-filters__filter > a {
     min-width: 160px;
     padding-right: 60px;
 
-    &::after {
+    &::before {
       right: 20px;
+    }
+
+    &::after {
+      right: 24px;
     }
   }
 }

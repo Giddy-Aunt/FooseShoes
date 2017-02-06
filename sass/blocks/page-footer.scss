@@ -3,16 +3,15 @@
   color: $font-secondary-color;
   background-color: $bg-secondary-color;
 
-  &__top {
-    margin-bottom: 27px;
-  }
-
   &__middle {
+    padding-top: 30px;
     margin-bottom: 35px;
+    border-top: 1px solid #1c1c1c;
   }
 
   &__bottom {
-    padding-top: 25px;
+    padding: 23px 0;
+    background-color: #2e2e2e;
   }
 }
 
@@ -22,6 +21,10 @@
   flex-direction: column;
 
   &--top {
+    padding: 0 50px;
+  }
+
+  &--middle {
     padding: 0 50px;
   }
 
@@ -59,8 +62,20 @@
   }
 }
 
+.page-footer__copyright p {
+  margin: 0;
+}
 
 @media #{$mobile-only} {
+
+  .page-footer__links {
+    margin-bottom: 30px;
+  }
+
+  .page-footer__copyright {
+    order: 1;
+  }
+
   .page-footer__inner--middle {
     display: block;
     text-align: center;

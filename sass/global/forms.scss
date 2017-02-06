@@ -5,30 +5,45 @@
 
 .subscribe-form {
   display: flex;
+  padding: 5px 0;
 }
 
 .search-form__submit {
   @include size(36px);
   font-size: 0;
-  //background-color: transparent;
+  background-color: transparent;
   border: none;
   outline: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    @include sprite($icon-search);
+  }
 }
 
 .subscribe-form__submit {
+  position: relative;
   @include size(36px);
   font-size: 0;
-  //background-color: transparent;
+  background-color: #7d7d7d;
   border: none;
   outline: none;
+
+  &::after {
+    @include arrow-icon(14px, 14px, 10px, -45deg);
+  }
 }
 
 .text-field {
   display: block;
-  padding: 9px 14px;
+  padding: 9px 10px;
   width: 215px;
 
   font-style: italic;
+  color: $font-secondary-color;
+  line-height: 16px;
+  font-size: 1rem;
   outline: none;
   border: none;
 
@@ -37,7 +52,11 @@
   }
 
     &--subscribe {
-    background-color: black;
+    background-color: #2e2e2e;
   }
 
+  &:focus {
+    background-color: #cccccc;
+    color: $font-color;
+  }
 }

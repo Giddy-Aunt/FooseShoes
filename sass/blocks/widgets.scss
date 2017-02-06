@@ -34,6 +34,8 @@
   &--footer {
     background-color: transparent;
     flex-basis: 30%;
+    padding-left: 0;
+    padding-right: 0;
 
     & .widget__title {
       margin-bottom: 15px;
@@ -141,6 +143,9 @@ a.widget__overflow-link {
 .picture-feed__item {
   margin-bottom: 8px;
   margin-right: 8px;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .twitter-post {

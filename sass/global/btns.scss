@@ -12,7 +12,7 @@
   &--commerce {
     @include size(40px);
     font-size: 0;
-    border: 10px solid white;
+    border: 9px solid white;
     background-color: white;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
@@ -20,11 +20,10 @@
 
   &--social {
     @include size(40px);
+    line-height: 40px;
     font-size: 0;
-    border: 5px solid #2e2e2e;
+    border-top: 9px solid #2e2e2e;
     background-color: #2e2e2e;
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
 
     &:hover {
       opacity: 0.8;
@@ -32,26 +31,48 @@
   }
 
   &--facebook {
-    @include sprite-position($icon-fb);
+    &::before {
+      content: "";
+      display: inline-block;
+      @include sprite($icon-fb);
+    }
   }
 
   &--twitter {
-    @include sprite-position($icon-tw);
+    &::before {
+      content: "";
+      display: inline-block;
+      @include sprite($icon-tw);
+    }
   }
 
   &--flickr {
-    @include sprite-position($icon-flickr);
+    border-top: 5px solid #2e2e2e;
+    &::before {
+      content: "";
+      display: inline-block;
+      @include sprite($icon-flickr);
+    }
   }
 
   &--google {
-    @include sprite-position($icon-gl);
+    &::before {
+      content: "";
+      display: inline-block;
+      @include sprite($icon-gl);
+    }
   }
 
   &--linkedin {
-    @include sprite-position($icon-in);
+    &::before {
+      content: "";
+      display: inline-block;
+      @include sprite($icon-in);
+    }
   }
 
   &--full {
+    border-left: 6px solid white;
     @include sprite-position($icon-eye);
   }
 
@@ -66,11 +87,6 @@
     &--fav {
     @include sprite-position($icon-star);
   }
-
-
-
-
-
 
 
   &--catalog {

@@ -25,6 +25,10 @@
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      color: #cccccc;
+    }
   }
 
   &__text {
@@ -46,12 +50,33 @@
     &:last-child {
       border-right: 1px solid #cccccc;
     }
+
+    &--cart {
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: middle;
+        @include sprite($icon-cart);
+      }
+    }
+
+    &--fav {
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: middle;
+        @include sprite($icon-star);
+      }
+    }
+
   }
 
   &__counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
     @include size(20px);
     border-radius: 3px;
 

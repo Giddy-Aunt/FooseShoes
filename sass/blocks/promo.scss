@@ -1,20 +1,35 @@
-.promo {
-  overflow: hidden;
+
+.promo--inner-page {
+  .promo__inner,
+  .promo__img {
+    height: 260px;
+  }
+  .commerce-btns {
+    display: none;
+  }
+
+  .promo__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 0;
+  }
+  .promo__p {
+    margin: 5px 0;
+  }
 }
 
 .promo__inner {
   max-width: 1400px;
-  height: 460px;
   overflow: hidden;
   margin: 0 auto;
-  position: relative;
+  height: 460px;
 }
 
 .promo__img {
   height: 460px;
   background-image: url("../img/slide-1.jpg");
   background-repeat: no-repeat;
-  background-position: 25%;
+  background-position: bottom 25%;
   background-size: cover;
 }
 
@@ -22,6 +37,10 @@
   padding: 0 40px;
   padding-top: 70px;
   text-align: right;
+
+  .promo--inner-page & {
+    padding-top: 50px;
+  }
 }
 
 .promo__title {
@@ -29,6 +48,12 @@
   font-weight: 300;
   line-height: 1;
   font-size: 3.33rem;
+
+  .promo--inner-page & {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 15px;
+  }
 }
 
 .promo__p {
@@ -36,6 +61,10 @@
   font-weight: 300;
   font-size: 1.66rem;
   line-height: 1.3;
+
+  .promo--inner-page & {
+    margin: 5px 0;
+  }
 }
 
 .slides {
@@ -91,8 +120,7 @@
 }
 
 .slider__slide-subtitle {
-  display: block;
-  font-size: 1rem;
+  display: none;
 }
 
 
@@ -100,12 +128,17 @@
   .promo__caption {
     margin-left: 30%;
   }
+
+  .slider__slide-subtitle {
+    display: block;
+    font-size: 1rem;
+  }
 }
 
 
 @media #{$desktop-widths} {
   .promo__img {
-    background-position: center;
+    background-position: bottom center;
   }
 
   .promo__caption {
