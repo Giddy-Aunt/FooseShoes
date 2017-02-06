@@ -5,6 +5,9 @@ html {
 
 body {
   min-width: $mobile-width;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   font-weight: normal;
   font-family: "Aller", "Tahoma", sans-serif;
@@ -13,6 +16,10 @@ body {
 
 
   background-color: $bg-color;
+}
+
+.page-content {
+  flex-grow: 2;
 }
 
 *,
@@ -49,10 +56,5 @@ body {
   margin-left: auto;
 }
 
-@media #{$tablet-widths} {
-  .column-half-width {
-    width: 50%;
-  }
-}
 
 
