@@ -1,6 +1,19 @@
 .page-footer {
+  padding-top: 15px;
   color: $font-secondary-color;
   background-color: $bg-secondary-color;
+
+  &__top {
+    margin-bottom: 27px;
+  }
+
+  &__middle {
+    margin-bottom: 35px;
+  }
+
+  &__bottom {
+    padding-top: 25px;
+  }
 }
 
 .page-footer__inner {
@@ -14,7 +27,6 @@
 
   &--bottom {
     padding: 0 10px;
-    //justify-content: center;
     align-items: center;
   }
 }

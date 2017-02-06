@@ -12,14 +12,66 @@
   &--commerce {
     @include size(40px);
     font-size: 0;
+    border: 10px solid white;
     background-color: white;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
   }
 
   &--social {
     @include size(40px);
     font-size: 0;
+    border: 5px solid #2e2e2e;
     background-color: #2e2e2e;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
+
+  &--facebook {
+    @include sprite-position($icon-fb);
+  }
+
+  &--twitter {
+    @include sprite-position($icon-tw);
+  }
+
+  &--flickr {
+    @include sprite-position($icon-flickr);
+  }
+
+  &--google {
+    @include sprite-position($icon-gl);
+  }
+
+  &--linkedin {
+    @include sprite-position($icon-in);
+  }
+
+  &--full {
+    @include sprite-position($icon-eye);
+  }
+
+    &--cart {
+    @include sprite-position($icon-cart-1);
+  }
+
+    &--share {
+    @include sprite-position($icon-share);
+  }
+
+    &--fav {
+    @include sprite-position($icon-star);
+  }
+
+
+
+
+
+
 
   &--catalog {
 
@@ -42,6 +94,16 @@
   &--view-as {
     @include size(30px);
     margin-left: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--view-as-table {
+    background-image: url("../img/icon-table.png");
+  }
+
+  &--view-as-list {
+    background-image: url("../img/icon-list.png");
   }
 }
 

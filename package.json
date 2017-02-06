@@ -18,7 +18,8 @@
     "gulp-sass": "2.3.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "gulp.spritesmith": "^3.8.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
