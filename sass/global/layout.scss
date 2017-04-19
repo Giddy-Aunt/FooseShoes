@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  min-width: $mobile-width;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-weight: normal;
+  font-family: "Aller", "Tahoma", sans-serif;
+  line-height: 1.5;
+  color: $font-color;
+
+
+  background-color: $bg-color;
+}
+
+.page-content {
+  flex-grow: 2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-content__inner {
+  @include container;
+}
+
+.left {
+  display: flex;
+  margin-right: auto;
+}
+
+.right {
+  display: flex;
+  margin-left: auto;
+}
+
+
+

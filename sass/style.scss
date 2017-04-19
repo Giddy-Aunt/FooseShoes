@@ -1,0 +1,22 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "_sprite.scss";
+
+@import "global/fonts.scss";
+@import "global/normalize.scss";
+@import "global/layout.scss";
+@import "global/forms.scss";
+@import "global/btns.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/price.scss";
+@import "blocks/banners.scss";
+@import "blocks/products.scss";
+@import "blocks/product-card.scss";
+@import "blocks/widgets.scss";
+@import "blocks/catalog-filters.scss";
+@import "blocks/page-footer.scss";
+
