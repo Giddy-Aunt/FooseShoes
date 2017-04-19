@@ -13,6 +13,7 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 var spritesmith = require('gulp.spritesmith');
+var deploy = require('gulp-gh-pages');
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -87,6 +88,13 @@ gulp.task("clean", function() {
   return del("build");
 });
 
+
+
 gulp.task("build", function(fn) {
   run("clean", "copy", "style", "images", "sprite", fn);
+});
+
+gulp.task("deploy", ["build"],  function () {
+  return gulp.src("build/**/*")
+    .pipe(deploy())
 });
