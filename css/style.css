@@ -535,7 +535,6 @@ body {
 .text-field {
   display: block;
   padding: 9px 10px;
-  width: 215px;
   font-style: italic;
   color: #7e7e7e;
   line-height: 16px;
@@ -673,9 +672,7 @@ body {
 .page-header__inner {
   min-width: 320px;
   width: auto;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between; }
+  padding: 0 10px; }
 
 .page-header__main {
   background-color: #ffffff; }
